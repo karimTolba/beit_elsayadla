@@ -34,7 +34,7 @@
 
 <div id="image_explain">
 
-<a href="" id="image_ex">
+<a href=<?php $id=$results["id"]; $place = "parts_of_index_page/show_news.php";$title="تفاصيل%20الخبر"; echo "?title=" .$title."&place=" .$place."&id=".$id; ?> id="image_ex">
     <h5 id="cap">
         <?php echo $results["head"] ?>
     </h5>

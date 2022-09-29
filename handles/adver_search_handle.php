@@ -7,7 +7,7 @@
     $operation_name = $_POST["operation_name"];
     $location = $_POST["location"];
 
-    $sql = "select name , adress from pharmacy_reg where operation_name = '$operation_name' and location = '$location' order by id desc";
+    $sql = "select id , name , adress from pharmacy_reg where operation_name = '$operation_name' and location = '$location' order by id desc";
 
     $return_value = $con->query($sql);
     

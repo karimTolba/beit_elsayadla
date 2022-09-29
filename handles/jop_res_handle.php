@@ -7,7 +7,7 @@
     $jop_title = $_POST["jop_title"];
     $location = $_POST["location"];
 
-    $sql = "select name , exp_not from jop_reg where jop_title = '$jop_title' and location = '$location' order by id desc";
+    $sql = "select id , name , exp_not from jop_reg where jop_title = '$jop_title' and location = '$location' order by id desc";
 
     $return_value = $con->query($sql);
     

@@ -58,10 +58,15 @@
     </div>
     <div class="input-group-prepend">
         <label for="news_image" style="margin-right : 10px;">اختر صورة</label>
-        <input type="file" name="pharmacy_image" id="pharmacy_image">
+        <input type="file" name="pharmacy_image" id="pharmacy_image" required>
     </div>
     <div class="form-group" style="padding-top : 20px">
        <input type="submit" class="btn btn-lg btn-danger" value="تسجيل"> 
     </div>  
   </form>
 </div>
+
+
+<script>
+  alert("نحيط علم سيادتكم انه سوف يتم ازالة الاعلانات التى مضى عليها 25 يوم تلقائيا");
+</script>

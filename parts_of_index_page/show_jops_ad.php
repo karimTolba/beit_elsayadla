@@ -14,7 +14,7 @@ $return_value = $con->query($sql);
 
 $results = $return_value->fetch_all(MYSQLI_ASSOC);
 
-if (count($results) >=12) {
+if (count($results) >12) {
   for($i = 1 ; $i <= (count($results)-1);$i++){
   if($i%12 == 0){
     array_push($results_arr, array_chunk($results, 12)[0]);
@@ -107,7 +107,7 @@ else{
 <?php 
 
 if($return_value->num_rows > 0) {
-  if(count($results) >=12 ){
+  if(count($results) >12 ){
 for ($i_1 = 0;$i_1<=((count($results_arr)) - 1);$i_1++) {
     echo $i_1;
 
@@ -119,7 +119,7 @@ for ($i_1 = 0;$i_1<=((count($results_arr)) - 1);$i_1++) {
         <?php for ($i_2 = 0;$i_2<=((count($results_arr[$i_1])) -1);$i_2++) {
             ?>
           <div class="card col-5" style="width: 18rem;background-color : black;color : green;border-radius : 10px;margin-top : 20px;margin-bottom : 20px;">
-            <a href="">
+            <a href=<?php $id = $results_arr[$i_1][$i_2]["id"]; $place = "parts_of_index_page/jop_details.php";$title="تفاصيل%20الوظيفة"; echo "?title=" .$title."&place=" .$place."&id=".$id; ?>>
               <div class="card-body">
                 <h5 class="card-title" style="text-align: right;"><?php echo $results_arr[$i_1][$i_2]["name"]; ?></h5>
                 <p class="card-text" style="text-align: right;"> <i class="fas fa-map-marker-alt" style="margin-left : 5px;"></i> <?php echo $results_arr[$i_1][$i_2]["location"]; ?></p>
@@ -137,7 +137,7 @@ for ($i_1 = 0;$i_1<=((count($results_arr)) - 1);$i_1++) {
     <div class="row paginations">
       <?php foreach($results_arr as $result){ ?>
         <div class="card col-5" style="width: 18rem;background-color : black;color : green;border-radius : 10px;margin-top : 20px;margin-bottom : 20px;">
-            <a href="">
+            <a href=<?php $id = $result["id"]; $place = "parts_of_index_page/jop_details.php";$title="تفاصيل%20الوظيفة"; echo "?title=" .$title."&place=" .$place."&id=".$id; ?>>
               <div class="card-body">
                 <h5 class="card-title" style="text-align: right;"><?php echo $result["name"]; ?></h5>
                 <p class="card-text" style="text-align: right;"> <i class="fas fa-map-marker-alt" style="margin-left : 5px;"></i> <?php echo $result["location"]; ?></p>
@@ -163,7 +163,7 @@ else{
 
 
 <?php if($return_value->num_rows > 0) {
-  if(count($results) >=12 ){ ?>
+  if(count($results) >12 ){ ?>
 
   <ul id="pag" class="pagination justify-content-center">
     <li class="page-item" id="prev"><a class="page-link" href="#">Previous</a></li>

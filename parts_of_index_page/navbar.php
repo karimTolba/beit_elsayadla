@@ -73,7 +73,9 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href=<?php $place = "parts_of_index_page/jops_search.php";$title="بحث%20في%20الوظائف"; echo "?title=" .$title."&place=" .$place; ?>>بحث في الوظائف</a>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href=<?php $place = "parts_of_index_page/jops_ad.php";$title="اعلانات%20وظائف"; echo "?title=" .$title."&place=" .$place; ?>>اعلانات وظائف</a>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href=<?php $place = "parts_of_index_page/jops_reg.php";$title="تسجيل%20وظائف"; echo "?title=" .$title."&place=" .$place; ?>>تسجيل وظائف</a>
         </div>
       </li>
@@ -83,7 +85,9 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href=<?php $place = "parts_of_index_page/adver_search.php";$title="بحث%20في%20الوسيط"; echo "?title=" .$title."&place=" .$place; ?>>بحث في الوسيط</a>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href=<?php $place = "parts_of_index_page/show_adver.php";$title="اعلانات%20الصيدليات"; echo "?title=" .$title."&place=" .$place; ?>>اعلانات الصيدليات</a>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href=<?php $place = "parts_of_index_page/adver_reg.php";$title="تسجيل%20صيدلية"; echo "?title=" .$title."&place=" .$place; ?>>التسجيل</a>
         </div>
       </li>
@@ -105,7 +109,7 @@
           </li>
         <?php }} ?>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-phone" style="margin-left : 5px;"></i> اتصل بنا</a>
+        <a class="nav-link" href=<?php $place = "parts_of_index_page/contact_us.php";$title="اتصل%20بنا"; echo "?title=" .$title."&place=" .$place; ?>><i class="fa-sharp fa-solid fa-phone" style="margin-left : 5px;"></i> اتصل بنا</a>
       </li>
       <?php if($switch == false){ ?>
       <li class="nav-item dropdown">
@@ -121,15 +125,3 @@
   </div>
 </nav>
 
-
-<script>
-  /*const navbar = document.getElementById("navbar");
-
-  document.onscroll = ()=>{
-    if (window.scrollY > 0) {
-        navbar.classList.add("fixed-top");
-    }
-    else
-      navbar.classList.remove("fixed-top");
-  }*/
-</script>
