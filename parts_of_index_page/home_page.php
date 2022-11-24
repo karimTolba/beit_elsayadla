@@ -1,22 +1,30 @@
 <?php
 
-    include_once("../project/database/database_connection.php");
+    include_once("/home/vpn2w4bl7xr8/public_html/database/database_connection.php");
 
     $sql = "select * from news";
 
-    $result = ($con->query($sql))->fetch_all(MYSQLI_ASSOC);
+    $result = [];
 
+    $return_value = $con->query($sql);
+
+    while($data = $return_value->fetch_assoc()){
+
+        array_push($result , $data);
+
+    }
+    
 ?>
 
 <div id="slider_container">
 
 <?php foreach($result as $results){ ?>
 
-        <span class="images" hidden> <?php echo "../project/images/".$results["news_image"]; ?></span>
+        <span class="images" hidden><?php echo "images/".$results["news_image"]; ?></span>
 
-        <span class="caps" hidden><?php echo $results["head"] ?></span>
+        <span class="caps" hidden><?php echo utf8_decode($results["head"]); ?></span>
 
-        <span class="texts" hidden><?php echo $results["description"] ?></span>
+        <span class="texts" hidden><?php echo utf8_decode($results["description"]); ?></span>
 
     <?php } ?>
 
@@ -28,7 +36,7 @@
     }
 </style>    
 
-    <img src=<?php echo "../project/images/".$results["news_image"]; ?> id="slider">  
+    <img src=<?php echo "images/".$results["news_image"]; ?> id="slider">  
 
 </div>
 
@@ -36,11 +44,11 @@
 
 <a href=<?php $id=$results["id"]; $place = "parts_of_index_page/show_news.php";$title="تفاصيل%20الخبر"; echo "?title=" .$title."&place=" .$place."&id=".$id; ?> id="image_ex">
     <h5 id="cap">
-        <?php echo $results["head"] ?>
+        <?php echo utf8_decode($results["head"]); ?>
     </h5>
    
     <p id="text">
-        <?php echo $results["description"] ?>
+        <?php echo utf8_decode($results["description"]); ?>
     </p>
 </a>
 </div>

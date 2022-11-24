@@ -4,16 +4,25 @@
 
     include_once("../database/database_connection.php");
 
-    $jop_title = $_POST["jop_title"];
-    $location = $_POST["location"];
+    $jop_title = utf8_encode($_POST["jop_title"]);
+    $location = utf8_encode($_POST["location"]);
+    $gov_id = $_POST["gov"];
 
-    $sql = "select id , name , exp_not from jop_reg where jop_title = '$jop_title' and location = '$location' order by id desc";
+    $sql = "select id , name , exp_not from jop_reg where jop_title = '$jop_title' and location = '$location' and govs_id = '$gov_id' order by id desc";
 
     $return_value = $con->query($sql);
     
     if($return_value->num_rows > 0){
+    
+    $results = [];
 
-        $results = $return_value->fetch_all(MYSQLI_ASSOC);
+    $return_value = $con->query($sql);
+
+    while($data = $return_value->fetch_assoc()){
+
+        array_push($results , $data);
+
+    }
 
         $_SESSION["results"] = $results;
 
@@ -35,6 +44,6 @@
         header("location:../index.php?title=$title&place=$place");
 
 
-    }    
+    }   
 
 ?>

@@ -22,7 +22,7 @@
 </div>
 
 <div id="form_container" style="margin-top : 30px;">
-  <form action="../project/handles/news_handle.php" method="post" enctype="multipart/form-data" dir="rtl" style="text-align: right;">
+  <form action="../handles/news_handle.php" method="post" enctype="multipart/form-data" dir="rtl" style="text-align: right;">
     <div class="form-group">
       <label for="exampleFormControlInput1">مقدمة الخبر</label>
       <input type="text" class="form-control" id="exampleFormControlInput1" name="head" placeholder="مقدمة الخبر">

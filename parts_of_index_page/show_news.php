@@ -1,14 +1,21 @@
 <?php 
 
-    include_once("../project/database/database_connection.php");
+    include_once("/home/vpn2w4bl7xr8/public_html/database/database_connection.php");
 
     $id = $_GET["id"];
 
     $sql = "select * from news where id = '$id'";
 
+    $results = [];
+
     $return_value = $con->query($sql);
 
-    $results = $return_value->fetch_all(MYSQLI_ASSOC);
+    while($data = $return_value->fetch_assoc()){
+
+        array_push($results , $data);
+
+    }
+    
 
 
 ?>
@@ -62,13 +69,29 @@
         line-height : 50px;
 
     }
+    @media screen and  (max-width : 500px){
+
+        #exp , #first {
+
+
+            font-size : 15px;
+
+        }
+
+        img{
+
+            height : 500px;
+
+        }
+
+    }
 </style>
 
 <article id="art">
     <section>
         <?php foreach($results as $result){ ?>
-            <img style="width : 100%;" src=<?php echo "../project/images/".$result["news_image"]; ?> alt="pharmacy_image">
-            <h4 id="first">عنوان الخبر : <?php echo $result["head"]; ?></h4>
+            <img style="width : 100%;" src=<?php echo "images/".$result["news_image"]; ?> alt="pharmacy_image">
+            <h4 id="first">عنوان الخبر : <?php echo utf8_decode($result["head"]); ?></h4>
             <hr>
             <p id="last">  تاريخ النشر:  <?php echo $result["date_time"]; ?><i class="fa-solid fa-star m"></i></p>
             <h4>
@@ -76,7 +99,7 @@
                     <label for="">تفاصيل الخبر</label>
                 </div>
                 <div id="exp">
-                    <?php echo $result["news_text"]; ?>
+                    <?php echo utf8_decode($result["news_text"]); ?>
                 </div>
             </h4>
         <?php } ?>    

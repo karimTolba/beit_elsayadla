@@ -1,8 +1,8 @@
 <?php
 
 $server_name = "localhost";
-$user_name = "root";
-$password = "";
+$user_name = "tolba_1988";
+$password = "karim1988@";
 $database_name = "beit_elsayadla";
 
 

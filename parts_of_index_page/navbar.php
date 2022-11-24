@@ -2,7 +2,7 @@
 
   session_start();
 
-  include_once("../project/database/database_connection.php");
+  include_once("/home/vpn2w4bl7xr8/public_html/database/database_connection.php");
 
   $switch = false;
 
@@ -12,7 +12,16 @@
 
     $sql = "select * from users";
 
-    $result = ($con->query($sql))->fetch_all(MYSQLI_ASSOC);
+    $result = [];
+
+    $return_value = $con->query($sql);
+
+    while($data = $return_value->fetch_assoc()){
+
+        array_push($result , $data);
+
+    }
+    
     
     foreach($result as $results){
 
@@ -91,25 +100,15 @@
           <a class="dropdown-item" href=<?php $place = "parts_of_index_page/adver_reg.php";$title="تسجيل%20صيدلية"; echo "?title=" .$title."&place=" .$place; ?>>التسجيل</a>
         </div>
       </li>
-      <?php if($switch == true && $switch_2 == false){?>
-        <li class="nav-item">
-          <a class="nav-link" href=<?php $place = "parts_of_index_page/sign_up.php";$title="تسجيل%20في%20الموقع"; echo "?title=" .$title."&place=" .$place; ?>><i class="fa-solid fa-user-plus" style="margin-left : 5px;"></i> تسجيل في الموقع</a>
-        </li>
-      <?php } ?>
-      <?php if($switch){?>    
-        <li class="nav-item">
-          <a class="nav-link" href=<?php $place = "parts_of_index_page/login_page.php";$title="تسجيل%20دخول"; echo "?title=" .$title."&place=" .$place; ?>><i class="fa-solid fa-right-to-bracket" style="margin-left : 5px ;"></i> تسجيل دخول</a>
-        </li>
-      <?php }?>
         <?php
           if($switch == false){ 
           if($permetion_name == "admin"){?>
           <li class="nav-item">
-            <a class="nav-link" href=<?php $place = "parts_of_index_page/news.php";$title="تسجيل%20الاخبار"; echo "?title=" .$title."&place=" .$place; ?>><i class="fa-solid fa-file-lines" style="margin-left : 5px;"></i> تسجيل الاخبار</a>
+            <a class="nav-link" href=<?php $place = "parts_of_index_page/control_panel.php";$title="لوحة%20التحكم"; echo "?title=" .$title."&place=" .$place; ?>><i class="fa fa-tachometer" style="margin-left : 5px;"></i> لوحة التحكم</a>
           </li>
         <?php }} ?>
       <li class="nav-item">
-        <a class="nav-link" href=<?php $place = "parts_of_index_page/contact_us.php";$title="اتصل%20بنا"; echo "?title=" .$title."&place=" .$place; ?>><i class="fa-sharp fa-solid fa-phone" style="margin-left : 5px;"></i> اتصل بنا</a>
+        <a class="nav-link" href=<?php $place = "parts_of_index_page/contact_us.php";$title="اتصل%20بنا"; echo "?title=" .$title."&place=" .$place; ?>><i class="fa fa-phone" style="margin-left : 5px;"></i> اتصل بنا</a>
       </li>
       <?php if($switch == false){ ?>
       <li class="nav-item dropdown">
@@ -117,7 +116,7 @@
            <?php echo $user_name ?> <i class="fa-solid fa-user"></i>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href=<?php echo "../project/handles/log_out_handle.php" ?>>تسجيل خروج</a>
+          <a class="dropdown-item" href=<?php echo "handles/log_out_handle.php" ?>>تسجيل خروج</a>
         </div>
       </li>
       <?php } ?>

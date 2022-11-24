@@ -17,33 +17,64 @@
 
     ?>
 
-   Sign Up  
+   تسجيل في الموقع  
 
 </div>
 <div id="form_container" style="margin-top : 30px;">
 
-    <form action="../project/handles/sign_up_handle.php" method="post">
+    <form action="handles/sign_up_handle.php" method="post" style="text-align : right;direction : rtl;">
     <div class="form-group">
-        <label for="exampleInputEmail1">User Name</label>
-        <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="user name " name="user_name" required>
+        <label for="exampleInputEmail1">اسم المستخدم</label>
+        <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="اسم المستخدم " name="user_name" required>
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" required>
+        <label for="exampleInputPassword1">كلمة المرور</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="كلمة المرور" name="password" required>
     </div>
-    <button type="submit" class="btn btn-primary">تسجيل في الموقع</button>
+    <div class="form-group">
+        <label for="exampleInputPassword">تاكيد كلمة المرور</label>
+        <input type="password" class="form-control" id="exampleInputPassword" placeholder="تاكبد كلمة المرور"  required>
+    </div>
+    <div class="alert alert-danger" id="msg" hidden>passowrd field must matching confirm</div>
+    <button type="submit" class="btn btn-primary" id="submit">تسجيل</button>
     </form>
 
 </div>
 
 
 <script>
-    var user_name = document.getElementById("exampleInputEmail1");
+    const user_name = document.getElementById("exampleInputEmail1");
+    const password = document.getElementById("exampleInputPassword1");
+    const confirm = document.getElementById("exampleInputPassword");
+    const submit = document.getElementById("submit");
+    const msg = document.getElementById("msg");
 
     window.onload = ()=>{
 
         user_name.focus();
 
-
     }
+
+    confirm.oninput = ()=>{
+        if(password.value == confirm.value){
+            submit.removeAttribute("disabled");
+            msg.setAttribute("hidden" , "");
+        }
+        else{
+            submit.setAttribute("disabled" , "");
+            msg.removeAttribute("hidden");
+        }
+    }
+    password.oninput = ()=>{
+        if(password.value == confirm.value){
+            submit.removeAttribute("disabled");
+            msg.setAttribute("hidden" , "");
+        }
+        else{
+            submit.setAttribute("disabled" , "");
+            msg.removeAttribute("hidden");
+        }
+    }
+
+    
 </script>

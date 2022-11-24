@@ -1,6 +1,6 @@
 <?php
 
-include_once("../database/database_connection.php");
+include_once("/home/vpn2w4bl7xr8/public_html/database/database_connection.php");
 
 session_start();
 
@@ -11,7 +11,15 @@ $switch = false;
 
 $sql = "select user_name from users";
 
-$result = ($con->query($sql))->fetch_all(MYSQLI_ASSOC);
+$result = [];
+
+$return_value = $con->query($sql);
+
+while($data = $return_value->fetch_assoc()){
+
+    array_push($result , $data);
+
+}
 
 
 foreach($result as $results){

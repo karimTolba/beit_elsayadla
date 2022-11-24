@@ -1,6 +1,6 @@
 <?php 
 
-include_once("../database/database_connection.php");
+include_once("/home/vpn2w4bl7xr8/public_html/database/database_connection.php");
 
 session_start();
 
@@ -12,9 +12,18 @@ $switch = false;
 
 $user_id = 0;
 
+
 $sql = "select id , user_name , password from users";
 
-$result = ($con->query($sql))->fetch_all(MYSQLI_ASSOC);
+$result = [];
+
+$return_value = $con->query($sql);
+
+while($data = $return_value->fetch_assoc()){
+
+    array_push($result , $data);
+
+}
 
 foreach($result as $results){
 
@@ -26,16 +35,30 @@ foreach($result as $results){
 
 }
 
-
 if($switch){
 
-    $_SESSION["user_id"] = $user_id;
+    if($user_id == 1){
 
-    $title="الرئيسية";
+        $_SESSION["user_id"] = $user_id;
 
-    $place="parts_of_index_page/home_page.php";
+        $title="لوحة التحكم";
 
-    header("location:../index.php?title=$title&place=$place");
+        $place="parts_of_index_page/control_panel.php";
+    
+        header("location:../index.php?title=$title&place=$place");
+
+    }
+    else{
+
+        $_SESSION["user_id"] = $user_id;
+
+        $title="الرئيسية";
+
+        $place="parts_of_index_page/home_page.php";
+
+        header("location:../index.php?title=$title&place=$place");
+
+    }
 
 }
 else{

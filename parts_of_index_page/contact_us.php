@@ -45,6 +45,23 @@
         padding : 10px 50px 0px 0px;
 
     }
+
+    @media screen and (max-width : 500px){
+
+        #art{
+
+            width : 90%;
+            margin : 195px auto;
+
+        }
+
+        #first , #last{
+
+           font-size : 15px; 
+
+        }
+        
+    }
 </style>
 
 <article id="art">

@@ -1,0 +1,218 @@
+[05-Oct-2022 14:19:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_all() in /home/vpn2w4bl7xr8/public_html/handles/login_page_handle.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/vpn2w4bl7xr8/public_html/handles/login_page_handle.php on line 17
+[05-Oct-2022 14:23:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_all() in /home/vpn2w4bl7xr8/public_html/handles/login_page_handle.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/vpn2w4bl7xr8/public_html/handles/login_page_handle.php on line 17
+[05-Oct-2022 14:31:07 UTC] PHP Warning:  include_once(database/database_connection.php): failed to open stream: No such file or directory in /home/vpn2w4bl7xr8/public_html/handles/news_handle.php on line 5
+[05-Oct-2022 14:31:07 UTC] PHP Warning:  include_once(): Failed opening 'database/database_connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/vpn2w4bl7xr8/public_html/handles/news_handle.php on line 5
+[05-Oct-2022 14:31:07 UTC] PHP Notice:  Undefined variable: con in /home/vpn2w4bl7xr8/public_html/handles/news_handle.php on line 19
+[05-Oct-2022 14:31:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/vpn2w4bl7xr8/public_html/handles/news_handle.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/vpn2w4bl7xr8/public_html/handles/news_handle.php on line 19
+[05-Oct-2022 14:58:10 UTC] PHP Parse error:  syntax error, unexpected '*', expecting end of file in /home/vpn2w4bl7xr8/public_html/handles/news_handle.php on line 27
+[05-Oct-2022 17:15:50 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[06-Oct-2022 02:48:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_all() in /home/vpn2w4bl7xr8/public_html/handles/sign_up_handle.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vpn2w4bl7xr8/public_html/handles/sign_up_handle.php on line 14
+[06-Oct-2022 03:15:00 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[06-Oct-2022 10:49:59 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[07-Oct-2022 14:32:19 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[09-Oct-2022 08:30:26 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/vpn2w4bl7xr8/public_html/handles/jop_res_handle.php on line 13
+[09-Oct-2022 08:45:15 UTC] PHP Notice:  Undefined property: mysqli_result::$fetch_assoc in /home/vpn2w4bl7xr8/public_html/handles/jop_res_handle.php on line 13
+[09-Oct-2022 08:45:15 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/vpn2w4bl7xr8/public_html/handles/jop_res_handle.php on line 13
+[09-Oct-2022 14:10:44 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/vpn2w4bl7xr8/public_html/handles/jop_res_handle.php on line 19
+[09-Oct-2022 14:10:59 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/vpn2w4bl7xr8/public_html/handles/jop_res_handle.php on line 19
+[09-Oct-2022 14:11:52 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/vpn2w4bl7xr8/public_html/handles/jop_res_handle.php on line 19
+[09-Oct-2022 14:12:43 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/vpn2w4bl7xr8/public_html/handles/jop_res_handle.php on line 19
+[31-Oct-2022 12:57:29 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[31-Oct-2022 16:19:31 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[31-Oct-2022 20:06:04 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_res_handle.php on line 7
+[01-Nov-2022 10:12:03 UTC] PHP Notice:  Undefined variable: rowp in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 10:12:03 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 11:05:53 UTC] PHP Notice:  Undefined variable: results in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 25
+[01-Nov-2022 11:05:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 25
+[01-Nov-2022 11:05:53 UTC] PHP Notice:  Undefined variable: results in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 11:05:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 11:13:06 UTC] PHP Notice:  Undefined variable: results in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 25
+[01-Nov-2022 11:13:06 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 25
+[01-Nov-2022 11:13:06 UTC] PHP Notice:  Undefined variable: results in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 11:13:06 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 11:21:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pg_fetch_all() in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 20
+[01-Nov-2022 11:31:43 UTC] PHP Parse error:  syntax error, unexpected '*', expecting end of file in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 42
+[01-Nov-2022 22:51:40 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 22
+[01-Nov-2022 22:51:40 UTC] PHP Notice:  Undefined offset: 0 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 30
+[01-Nov-2022 22:51:40 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 30
+[01-Nov-2022 22:51:40 UTC] PHP Notice:  Undefined offset: 0 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 30
+[01-Nov-2022 22:51:40 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 30
+[01-Nov-2022 22:52:25 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 22
+[01-Nov-2022 22:52:25 UTC] PHP Notice:  Undefined offset: 0 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 30
+[01-Nov-2022 22:52:25 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 30
+[01-Nov-2022 22:52:25 UTC] PHP Notice:  Undefined offset: 0 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 30
+[01-Nov-2022 22:52:25 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 30
+[01-Nov-2022 22:53:09 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 24
+[01-Nov-2022 22:53:09 UTC] PHP Notice:  Undefined offset: 0 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 32
+[01-Nov-2022 22:53:09 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 32
+[01-Nov-2022 22:53:09 UTC] PHP Notice:  Undefined offset: 0 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 32
+[01-Nov-2022 22:53:09 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 32
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 1 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 2 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 32
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 3 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 33
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 1 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 2 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 32
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 3 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 33
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 1 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 2 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 32
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 3 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 33
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 1 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 2 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 32
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 3 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 33
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 1 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 2 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 32
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 3 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 33
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 1 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 31
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 2 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 32
+[01-Nov-2022 23:08:11 UTC] PHP Notice:  Undefined offset: 3 in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 33
+[02-Nov-2022 00:28:18 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' or ',' in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 59
+[03-Nov-2022 19:32:18 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_reg_handle.php on line 7
+[03-Nov-2022 19:32:18 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_reg_handle.php on line 8
+[03-Nov-2022 19:32:18 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_reg_handle.php on line 9
+[03-Nov-2022 19:32:18 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_reg_handle.php on line 10
+[03-Nov-2022 19:32:18 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_reg_handle.php on line 11
+[03-Nov-2022 19:32:18 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_reg_handle.php on line 12
+[03-Nov-2022 19:32:18 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_reg_handle.php on line 13
+[03-Nov-2022 19:32:45 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:32:45 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:32:45 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:32:45 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:32:45 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:32:45 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:32:45 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:32:45 UTC] PHP Notice:  Undefined index: data_time in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 16
+[03-Nov-2022 19:32:45 UTC] PHP Notice:  Undefined variable: dat_time in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 18
+[03-Nov-2022 19:34:05 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:34:05 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:34:05 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:34:05 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:34:05 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:34:05 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:34:05 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:34:05 UTC] PHP Notice:  Undefined index: data_time in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 16
+[03-Nov-2022 19:34:05 UTC] PHP Notice:  Undefined variable: dat_time in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 18
+[03-Nov-2022 19:34:28 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:34:28 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:34:28 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:34:28 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:34:28 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:34:28 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:34:28 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:34:28 UTC] PHP Notice:  Undefined index: data_time in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 16
+[03-Nov-2022 19:34:35 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:34:35 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:34:35 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:34:35 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:34:35 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:34:35 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:34:35 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:34:35 UTC] PHP Notice:  Undefined index: data_time in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 16
+[03-Nov-2022 19:35:04 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:35:04 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:35:04 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:35:04 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:35:04 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:35:04 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:35:04 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:37:37 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:37:37 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:37:37 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:37:37 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:37:37 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:37:37 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:37:37 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:37:42 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:37:42 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:37:42 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:37:42 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:37:42 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:37:42 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:37:42 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:38:24 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:38:24 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:38:24 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:38:24 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:38:24 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:38:24 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:38:24 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:38:37 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:38:37 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:38:37 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:38:37 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:38:37 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:38:37 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:38:37 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:39:57 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:39:57 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:39:57 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:39:57 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:39:57 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:39:57 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:39:57 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:39:57 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 18
+[03-Nov-2022 19:40:30 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 20
+[03-Nov-2022 19:42:39 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:42:39 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:42:39 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:42:39 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:42:39 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:42:39 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:42:39 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:42:39 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 18
+[03-Nov-2022 19:42:43 UTC] PHP Notice:  Undefined index: name in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 7
+[03-Nov-2022 19:42:43 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[03-Nov-2022 19:42:43 UTC] PHP Notice:  Undefined index: location in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 9
+[03-Nov-2022 19:42:43 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 10
+[03-Nov-2022 19:42:43 UTC] PHP Notice:  Undefined index: tel_ear in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 11
+[03-Nov-2022 19:42:43 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[03-Nov-2022 19:42:43 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[03-Nov-2022 19:42:43 UTC] PHP Notice:  Undefined index: exp_not in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 18
+[03-Nov-2022 20:55:41 UTC] PHP Notice:  Undefined index: id in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 15
+[03-Nov-2022 21:35:43 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[13-Nov-2022 17:40:08 UTC] PHP Notice:  Undefined index: id in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 11
+[13-Nov-2022 17:40:25 UTC] PHP Notice:  Undefined index: id in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 11
+[13-Nov-2022 17:45:57 UTC] PHP Notice:  Undefined index: id in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 11
+[13-Nov-2022 17:46:02 UTC] PHP Notice:  Undefined index: id in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 11
+[15-Nov-2022 21:22:03 UTC] PHP Notice:  Undefined offset: 1 in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 27
+[15-Nov-2022 21:22:03 UTC] PHP Notice:  Undefined variable: sql in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 31
+[15-Nov-2022 21:22:03 UTC] PHP Warning:  mysqli::query(): Empty query in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 31
+[15-Nov-2022 21:22:29 UTC] PHP Notice:  Undefined variable: sql in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 31
+[15-Nov-2022 21:22:29 UTC] PHP Warning:  mysqli::query(): Empty query in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 31
+[19-Nov-2022 09:20:11 UTC] PHP Notice:  Undefined variable: news_image_old in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 24
+[19-Nov-2022 09:20:11 UTC] PHP Notice:  Undefined offset: 1 in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 28
+[19-Nov-2022 09:46:45 UTC] PHP Notice:  Undefined variable: con_query in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 61
+[19-Nov-2022 09:46:45 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 61
+[19-Nov-2022 09:53:03 UTC] PHP Warning:  unlink(/home/vpn2w4bl7xr8/public_html/images/2063130114.PNG): No such file or directory in /home/vpn2w4bl7xr8/public_html/handles/news_modify_handle.php on line 23
+[20-Nov-2022 20:17:59 UTC] PHP Notice:  Undefined index: jop_title in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 8
+[20-Nov-2022 20:17:59 UTC] PHP Notice:  Undefined index: tel_mob in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 12
+[20-Nov-2022 20:17:59 UTC] PHP Notice:  Undefined index: email in /home/vpn2w4bl7xr8/public_html/handles/jop_control_handle.php on line 13
+[20-Nov-2022 20:34:47 UTC] PHP Notice:  Undefined index: details in /home/vpn2w4bl7xr8/public_html/handles/adver_control_handle.php on line 12
+[20-Nov-2022 20:34:47 UTC] PHP Notice:  Undefined index: pharmacy_image in /home/vpn2w4bl7xr8/public_html/handles/adver_control_handle.php on line 13
+[20-Nov-2022 21:08:26 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[22-Nov-2022 14:41:25 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[22-Nov-2022 15:49:53 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[22-Nov-2022 16:02:14 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[23-Nov-2022 09:05:59 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13
+[24-Nov-2022 13:04:51 UTC] PHP Notice:  Undefined index: details in /home/vpn2w4bl7xr8/public_html/handles/adver_control_handle.php on line 12
+[24-Nov-2022 13:04:51 UTC] PHP Notice:  Undefined index: pharmacy_image in /home/vpn2w4bl7xr8/public_html/handles/adver_control_handle.php on line 13
+[24-Nov-2022 13:14:10 UTC] PHP Notice:  Undefined index: details in /home/vpn2w4bl7xr8/public_html/handles/adver_control_handle.php on line 13
+[24-Nov-2022 13:14:10 UTC] PHP Notice:  Undefined index: pharmacy_image in /home/vpn2w4bl7xr8/public_html/handles/adver_control_handle.php on line 14
+[24-Nov-2022 13:28:06 UTC] PHP Notice:  Undefined variable: admin_log_out in /home/vpn2w4bl7xr8/public_html/handles/log_out_handle.php on line 13

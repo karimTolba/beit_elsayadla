@@ -18,21 +18,21 @@ if(!empty($_SESSION["login_failed"])){
 
 ?>
 
-   Sign In  
+   تسجيل دخول
 
 </div>
 <div id="form_container" style="margin-top : 50px;">
 
-    <form action="../project/handles/login_page_handle.php" method="post">
+    <form action="../handles/login_page_handle.php" method="post" style="text-align : right;direction : rtl;">
     <div class="form-group">
-        <label for="exampleInputEmail1">User Name</label>
-        <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="user name " name="user_name">
+        <label for="exampleInputEmail1">اسم المستخدم</label>
+        <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="اسم المستخدم " name="user_name">
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+        <label for="exampleInputPassword1">كلمة المرور</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="كلمة المرور" name="password">
     </div>
-    <button type="submit" class="btn btn-primary">تسجيل دخول</button>
+    <button type="submit" class="btn btn-primary">تسجيل</button>
     </form>
 
 </div>
